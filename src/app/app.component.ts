@@ -1,17 +1,15 @@
 import { Component } from '@angular/core';
+import { TodoItem } from './interfaces/todo-item';
 
 @Component({
   selector: 'app-root',
-  // templateUrl: './app.component.html',
   template: `
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
+    <h1>Welcome to {{ title }}!</h1>
 
-  <app-input-button-unit></app-input-button-unit>
+    <app-list-manager></app-list-manager>
   `,
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'todo-list';
+  title = 'My To Do List APP';
 }
